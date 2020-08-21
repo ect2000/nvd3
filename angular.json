@@ -14,15 +14,7 @@
           "options": {
             "tsConfig": "projects/ontimize-web-ngx-nvd3/tsconfig.lib.json",
             "project": "projects/ontimize-web-ngx-nvd3/ng-package.json"
-          },
-          "scripts": [
-            "projects/ontimize-web-ngx-nvd3/src/lib/custom_models/gauge.js",
-            "projects/ontimize-web-ngx-nvd3/src/lib/custom_models/gaugeChart.js",
-            "projects/ontimize-web-ngx-nvd3/src/lib/custom_models/packedBubble.js",
-            "projects/ontimize-web-ngx-nvd3/src/lib/custom_models/packedBubbleChart.js",
-            "projects/ontimize-web-ngx-nvd3/src/lib/custom_models/radar.js",
-            "projects/ontimize-web-ngx-nvd3/src/lib/custom_models/radarChart.js"
-          ]
+          }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",

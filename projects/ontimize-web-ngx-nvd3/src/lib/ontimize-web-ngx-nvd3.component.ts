@@ -17,6 +17,7 @@ import {
 import * as d3 from 'd3';
 import * as Hammer from 'hammerjs';
 import * as nv from 'nvd3';
+import * as nvExtra from 'nvd3-extra';
 
 
 @Component({
@@ -42,7 +43,7 @@ export class nvD3 implements OnChanges {
     private svg: any;
     private mc: any;
 
-    @Output('onTap')        onTap       = new EventEmitter();  
+    @Output('onTap')        onTap       = new EventEmitter();
 
     @Output('onDoubleTap')  onDoubleTap = new EventEmitter();
 
@@ -55,10 +56,10 @@ export class nvD3 implements OnChanges {
     @Output('onPinch')      onPinch     = new EventEmitter();
 
     constructor(private elementRef: ElementRef) {
-        this.el = elementRef.nativeElement;
-        
+      this.el = elementRef.nativeElement;
+
         this.touchEventManager();
-      
+
     }
 
     touchEventManager() {
@@ -117,7 +118,7 @@ export class nvD3 implements OnChanges {
             event.srcEvent.preventDefault();
             self.onPinch.emit(event);
         });
-        
+
     }
 
     ngOnChanges(changes: SimpleChanges) {
