@@ -16,8 +16,7 @@ import {
 } from '@angular/core';
 import * as d3 from 'd3';
 import * as Hammer from 'hammerjs';
-import * as nv from 'nvd3';
-import * as nvExtra from 'nvd3-extra';
+import * as nv from '@wavemaker/nvd3';
 
 
 @Component({
